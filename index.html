@@ -89,6 +89,109 @@
                         <h3 style="font-size: 24px">Publications</h3>
                     </div>
                     <ol class="bibliography">
+
+                    <h2 class="year">2023</h2>
+                    <li>
+                        <div class="img_row" style="height: 100%;">  
+                            
+                            <div class="col one" style="margin-top: 5%;">
+                                <video poster="" class="custom-video" id="id_1" loop autoplay controls muted playsinline width="100%">
+                                    <source src="./assets/img/self.mp4"
+                                            type="video/mp4">
+                                  </video>
+                                  <video poster="" class="custom-video" id="id_1" loop autoplay controls muted playsinline width="100%">
+                                    <source src="./assets/img/cross.mp4"
+                                            type="video/mp4">
+                                  </video>
+                            </div>
+
+                            <div class="col two">                     
+                                <div id="latent">
+                                    <span class="title" style="font-weight: bold; font-size: 18px"><i><u>HyperReenact: One-Shot Reenactment via Jointly Learning to Refine and Retarget Faces</i></u></span>
+                                    <span class="author">
+                                        <strong>Stella Bounareli<sup style="text-decoration:none"></sup></strong>, 
+                                        <!-- Stella Bounareli, Christos Tzelepis, Vasileios Argyriou, Ioannis Patras, Georgios Tzimiropoulos -->
+                                        <a href="https://chi0tzp.github.io/"> Christos Tzelepis<sup style="text-decoration:none"></sup></a>,
+                                        <a href="https://www.kingston.ac.uk/staff/profile/professor-vasilis-argyriou-332/"> Vasileios Argyriou<sup style="text-decoration:none"></sup></a>,
+                                        <a href="http://www.eecs.qmul.ac.uk/~ioannisp/"> Ioannis Patras<sup style="text-decoration:none"></sup></a>,
+                                        <a href="https://ytzimiro.github.io/"> Georgios Tzimiropoulos<sup style="text-decoration:none"></sup></a>
+                                    </span>
+                                    <span style='color: #cf0000'>
+                                        <i><u><b>IEEE/CVF International Conference on Computer Vision (ICCV), 2023</b></u></i>
+                                    </span>
+                                    <span class="periodical"> 
+                                        <span class="links"> <a></a>
+                                        </span>
+                                    </span>
+                                    <br> 
+                                    <span class="links">
+                                        <a class="btn button" href="https://arxiv.org/abs/2307.10797" target="_blank">Paper</a>
+                                        <a class="btn button" href="https://stelabou.github.io/hyperreenact.github.io/" target="_blank">Project Page</a>
+                                        <a class="btn button" href="https://github.com/StelaBou/HyperReenact" target="_blank">Source Code</a>
+                                    </span>
+
+                                    <br>
+                                    <p>
+                                        In this paper, we present our method, called HyperReenact, that aims to generate realistic 
+                                        talking head images of a source identity, driven by a target facial pose. Existing state-of-the-art face reenactment methods train 
+                                        controllable generative models that learn to synthesize realistic facial images, yet producing reenacted faces that are prone to significant 
+                                        visual artifacts, especially under the challenging condition of extreme head pose changes, or requiring expensive few-shot fine-tuning. We propose to address 
+                                        these limitations by learning a hypernetwork to perform: (i) refinement of the source identity characteristics and (ii) 
+                                        facial pose re-targeting. Our method operates under the one-shot setting (i.e., using a single source frame) and allows for cross-subject reenactment, 
+                                        without requiring any subject-specific fine-tuning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <hr>
+
+                    <li>
+                        <div class="img_row" style="height: 100%;">  
+                            
+                            <div class="col one" style="margin-top: 5%;">
+                                <img width="100%" src="assets/img/stylemask.png">
+                            </div>
+
+                            <div class="col two">                     
+                                <div id="latent">
+                                    <span class="title" style="font-weight: bold; font-size: 18px"><i><u>StyleMask: Disentangling the Style Space of StyleGAN2 for Neural Face Reenactment</i></u></span>
+                                    <span class="author">
+                                        <strong>Stella Bounareli<sup style="text-decoration:none"></sup></strong>, 
+                                        <!-- Stella Bounareli, Christos Tzelepis, Vasileios Argyriou, Ioannis Patras, Georgios Tzimiropoulos -->
+                                        <a href="https://chi0tzp.github.io/"> Christos Tzelepis<sup style="text-decoration:none"></sup></a>,
+                                        <a href="https://www.kingston.ac.uk/staff/profile/professor-vasilis-argyriou-332/"> Vasileios Argyriou<sup style="text-decoration:none"></sup></a>,
+                                        <a href="http://www.eecs.qmul.ac.uk/~ioannisp/"> Ioannis Patras<sup style="text-decoration:none"></sup></a>,
+                                        <a href="https://ytzimiro.github.io/"> Georgios Tzimiropoulos<sup style="text-decoration:none"></sup></a>
+                                    </span>
+                                    <span style='color: #cf0000'>
+                                        <i><u><b>17th IEEE conference on Automatic Face and Gesture Recognition (FG), 2023</b></u></i>
+                                    </span>
+                                    <span class="periodical"> 
+                                        <span class="links"> <a></a>
+                                        </span>
+                                    </span>
+                                    <br> 
+                                    <span class="links">
+                                        <a class="btn button" href="https://arxiv.org/abs/2209.13375" target="_blank">Paper</a>
+                                        <a class="btn button" href="https://github.com/StelaBou/StyleMask" target="_blank">Source Code</a>
+                                    </span>
+
+                                    <br>
+                                    <p>
+                                        In this paper we present a method that using unpaired randomly generated facial images, learns to disentangle the 
+                                        identity characteristics of a human face from its pose by incorporating the recently introduced style space S of StyleGAN2, 
+                                        a latent representation space that exhibits remarkable disentanglement properties.
+                                        By capitalizing on this, we learn to successfully mix a pair of source and target style codes using supervision from a 3D model. 
+                                        The resulting latent code, that is subsequently used for reenactment, consists of latent units corresponding to the facial 
+                                        pose of the target only and of units corresponding to the identity of the source only, 
+                                        leading to notable improvement in the reenactment performance compared to recent state-of-the-art methods.   
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <hr>
                     
                     <h2 class="year">2022</h2>
                         <li>
@@ -112,6 +215,7 @@
                                             <a href="https://www.kingston.ac.uk/staff/profile/professor-vasilis-argyriou-332/"> Vasileios Argyriou<sup style="text-decoration:none"></sup></a>,
                                             <a href="https://ytzimiro.github.io/"> Georgios Tzimiropoulos<sup style="text-decoration:none"></sup></a>
                                         </span>
+                                        <p>Accepted as <strong>oral presentation</strong> in:</p> 
                                         <span style='color: #cf0000'>
                                             <i><u><b>33rd British Machine Vision Conference (BMVC), 2022</b></u></i>
                                         </span>
@@ -140,52 +244,7 @@
                         </li>
                         <hr>
 
-                        <li>
-                            <div class="img_row" style="height: 100%;">  
-                                
-                                <div class="col one" style="margin-top: 5%;">
-                                    <img width="100%" src="assets/img/stylemask.png">
-                                </div>
-
-                                <div class="col two">                     
-                                    <div id="latent">
-                                        <span class="title" style="font-weight: bold; font-size: 18px"><i><u>StyleMask: Disentangling the Style Space of StyleGAN2 for Neural Face Reenactment</i></u></span>
-                                        <span class="author">
-                                            <strong>Stella Bounareli<sup style="text-decoration:none"></sup></strong>, 
-                                            <!-- Stella Bounareli, Christos Tzelepis, Vasileios Argyriou, Ioannis Patras, Georgios Tzimiropoulos -->
-                                            <a href="https://scholar.google.gr/citations?user=lndv4GMAAAAJ&hl=en"> Christos Tzelepis<sup style="text-decoration:none"></sup></a>,
-                                            <a href="https://www.kingston.ac.uk/staff/profile/professor-vasilis-argyriou-332/"> Vasileios Argyriou<sup style="text-decoration:none"></sup></a>,
-                                            <a href="http://www.eecs.qmul.ac.uk/~ioannisp/"> Ioannis Patras<sup style="text-decoration:none"></sup></a>,
-                                            <a href="https://ytzimiro.github.io/"> Georgios Tzimiropoulos<sup style="text-decoration:none"></sup></a>
-                                        </span>
-                                        <span style='color: #cf0000'>
-                                            <i><u><b>17th IEEE conference on Automatic Face and Gesture Recognition (FG), 2023</b></u></i>
-                                        </span>
-                                        <span class="periodical"> 
-                                            <span class="links"> <a></a>
-                                            </span>
-                                        </span>
-                                        <br> 
-                                        <span class="links">
-                                            <a class="btn button" href="https://arxiv.org/abs/2209.13375" target="_blank">Paper</a>
-                                            <a class="btn button" href="https://github.com/StelaBou/StyleMask" target="_blank">Source Code</a>
-                                        </span>
-
-                                        <br>
-                                        <p>
-                                            In this paper we present a method that using unpaired randomly generated facial images, learns to disentangle the 
-                                            identity characteristics of a human face from its pose by incorporating the recently introduced style space S of StyleGAN2, 
-                                            a latent representation space that exhibits remarkable disentanglement properties.
-                                            By capitalizing on this, we learn to successfully mix a pair of source and target style codes using supervision from a 3D model. 
-                                            The resulting latent code, that is subsequently used for reenactment, consists of latent units corresponding to the facial 
-                                            pose of the target only and of units corresponding to the identity of the source only, 
-                                            leading to notable improvement in the reenactment performance compared to recent state-of-the-art methods.   
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <hr>
+                       
                     
                 </div>   
                 
@@ -207,7 +266,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="date"><p>2022</p></td>
+                                <td class="date"><p>2022 - 2023</p></td>
                                 <td class="announcement">
                                     <p>Teaching assistant on MSc programme modules at Kingston Univeristy, London (CI7520: Machine Learning and Artificial Intelligence) </p> 
                                 </td>
